@@ -1,7 +1,6 @@
 package Chapter6;
 
 import java.util.Scanner;
-
 public class SeparatingDigits {
 
     public int quotient(int a, int b) {
@@ -11,8 +10,6 @@ public class SeparatingDigits {
     public int remainder(int a, int b) {
         return a % b;
     }
-
-
 
     public void separateDigits() {
         Scanner input = new Scanner(System.in);
@@ -46,10 +43,6 @@ public class SeparatingDigits {
             divisor = quotient(divisor, 10);
         } System.out.println(result);
     }
-
-
-
-
 
 
 
