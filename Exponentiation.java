@@ -46,13 +46,17 @@ public class Exponentiation{
         return integerPower;
     }
 
-    public static void main(String[] args){
-        Exponentiation exponentiation= new Exponentiation();
-        exponentiation.base();
-        exponentiation.exponent();
-        exponentiation.integerPower();
-        exponentiation.getIntegerPower();
 
+    public void findExponential(){
+        base();
+        exponent();
+        integerPower();
+        getIntegerPower();
+    }
+
+    public static void main(String[] args){
+        Exponentiation application = new Exponentiation();
+        application.findExponential();
 
     }
 }

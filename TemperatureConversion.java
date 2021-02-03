@@ -53,14 +53,10 @@ public class TemperatureConversion {
                 int userInput = input.nextInt();
 
                 switch ( choice ){
-                    case 1:
-                        System.out.printf( "%d Fahrenheit is %d Celsius\n",
+                    case 1 -> System.out.printf( "%d Fahrenheit is %d Celsius\n",
                                 userInput, fahrenheitToCelsius(userInput));
-                        break;
-                    case 2:
-                        System.out.printf( "%d Celsius is %d Fahrenheit\n",
+                    case 2 -> System.out.printf( "%d Celsius is %d Fahrenheit\n",
                                 userInput, celsiusToFahrenheit(userInput));
-                        break;
                 }
             }
         } while ( choice != 3 );

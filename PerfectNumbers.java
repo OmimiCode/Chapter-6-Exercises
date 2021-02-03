@@ -28,8 +28,7 @@ public class PerfectNumbers {
         for (int number = 2; number <= 1000; number++) {
             String result = perfect(number);
             if (result != null)
-                System.out.printf("%d is perfect.\n\tFactors: %s\n",
-                        number, result);
+                System.out.printf("%d is perfect.\n\tFactors: %s\n",number, result);
         }
     }
 
