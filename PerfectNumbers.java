@@ -11,15 +11,15 @@ public class PerfectNumbers {
 
     public String perfect(int value) {
         int factorSum = 1;
-        String factors = "1";
+        StringBuilder factors = new StringBuilder("1");
         for (int test = 2; test <= value / 2; test++) {
             if (value % test == 0) {
                 factorSum += test;
-                factors +=   "+"+ test;
+                factors.append("+").append(test);
             }
         }
         if (factorSum == value)
-            return factors;
+            return factors.toString();
         return null;
     }
 
@@ -33,7 +33,7 @@ public class PerfectNumbers {
     }
 
 
-    public static void main( String args[] ) {
+    public static void main(String[] args) {
         PerfectNumbers application = new PerfectNumbers();
         application.findPerfects();
     }
