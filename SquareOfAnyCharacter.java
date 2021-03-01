@@ -24,8 +24,7 @@ public class SquareOfAnyCharacter {
 
     public void numberOfRow(){
         System.out.print( "Enter square size: " );
-        int rows = input.nextInt();
-        this.row =rows;
+        this.row = input.nextInt();
     }
 
 
